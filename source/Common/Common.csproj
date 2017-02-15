@@ -36,6 +36,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contracts\IDateTimeWrapper.cs" />
+    <Compile Include="ServiceContracts\IFooService.cs" />
     <Compile Include="ServiceContracts\ILogService.cs" />
     <Compile Include="Exceptions\WindowsLogException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
