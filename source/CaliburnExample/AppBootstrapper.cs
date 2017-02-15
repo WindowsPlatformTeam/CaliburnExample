@@ -48,7 +48,7 @@ namespace CaliburnExample
         {
             var instance = _container.Resolve(service);
             if (instance != null)
-            {
+            { 
                 return instance;
             }
             throw new InvalidOperationException("Could not locate any instances.");
