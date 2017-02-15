@@ -2,7 +2,11 @@ using System;
 using Autofac;
 using Caliburn.Micro;
 using CaliburnExample.Contracts;
+using CaliburnExample.Contracts.Screen1;
+using CaliburnExample.Contracts.Screen2;
 using CaliburnExample.ViewModels;
+using CaliburnExample.ViewModels.Screen1;
+using CaliburnExample.ViewModels.Screen2;
 using Common.Contracts;
 using Common.ServiceContracts;
 using Common.Wrappers;
@@ -28,6 +32,9 @@ namespace CaliburnExample
 
             // ViewModels
             builder.RegisterType<ShellViewModel>().As<IShell>().SingleInstance();
+            builder.RegisterType<MainPageViewModel>().As<IMainPageViewModel>().SingleInstance();
+            builder.RegisterType<Screen1ViewModel>().As<IScreen1ViewModel>().SingleInstance();
+            builder.RegisterType<Screen2ViewModel>().As<IScreen2ViewModel>().SingleInstance();
 
             // Services
             LogBootstrapper.RegisterTypes(builder);

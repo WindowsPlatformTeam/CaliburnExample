@@ -75,6 +75,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="AppBootstrapper.cs" />
+    <Compile Include="Contracts\Screen1\IScreen1ViewModel.cs" />
+    <Compile Include="Contracts\Screen2\IScreen2ViewModel.cs" />
+    <Compile Include="Contracts\IMainPageViewModel.cs" />
+    <Compile Include="ViewModels\MainPageViewModel.cs" />
+    <Compile Include="ViewModels\Screen1\Screen1ViewModel.cs" />
+    <Compile Include="ViewModels\Screen2\Screen2ViewModel.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
     <Compile Include="Views\ShellView.xaml.cs">
       <DependentUpon>ShellView.xaml</DependentUpon>
@@ -105,7 +111,10 @@
       <Name>FooService</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\Screen1\" />
+    <Folder Include="Views\Screen2\" />
+  </ItemGroup>
   <ItemGroup>
     <Page Include="Views\ShellView.xaml">
       <Generator>MSBuild:Compile</Generator>

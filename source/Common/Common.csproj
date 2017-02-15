@@ -36,6 +36,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contracts\IDateTimeWrapper.cs" />
+    <Compile Include="Events\NavigateToScreen2Event.cs" />
+    <Compile Include="Events\NavigateToScreen1Event.cs" />
+    <Compile Include="Events\NavigateToHomeEvent.cs" />
     <Compile Include="ServiceContracts\IFooService.cs" />
     <Compile Include="ServiceContracts\ILogService.cs" />
     <Compile Include="Exceptions\WindowsLogException.cs" />
