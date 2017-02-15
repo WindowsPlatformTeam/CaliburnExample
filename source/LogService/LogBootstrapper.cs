@@ -11,10 +11,7 @@ namespace LoggerService
         {
             builder.RegisterType<DebugWrapper>().As<IDebugWrapper>();
             builder.RegisterType<EventLogWrapper>().As<IEventLogWrapper>();
-#if DEBUG
             builder.RegisterType<ConsoleLogger>().As<ILogger>();
-#endif
-            builder.RegisterType<WindowsLogger>().As<ILogger>();
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace CaliburnExample.ViewModels
+﻿namespace CaliburnExample.Contracts
 {
     public interface IMainPageViewModel
     {

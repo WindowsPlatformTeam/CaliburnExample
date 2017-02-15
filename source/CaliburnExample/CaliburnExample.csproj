@@ -82,6 +82,15 @@
     <Compile Include="ViewModels\Screen1\Screen1ViewModel.cs" />
     <Compile Include="ViewModels\Screen2\Screen2ViewModel.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
+    <Compile Include="Views\MainPageView.xaml.cs">
+      <DependentUpon>MainPageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Screen1\Screen1View.xaml.cs">
+      <DependentUpon>Screen1View.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Screen2\Screen2View.xaml.cs">
+      <DependentUpon>Screen2View.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ShellView.xaml.cs">
       <DependentUpon>ShellView.xaml</DependentUpon>
     </Compile>
@@ -111,11 +120,20 @@
       <Name>FooService</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Views\Screen1\" />
-    <Folder Include="Views\Screen2\" />
-  </ItemGroup>
-  <ItemGroup>
+    <Page Include="Views\MainPageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Screen1\Screen1View.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Screen2\Screen2View.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\ShellView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

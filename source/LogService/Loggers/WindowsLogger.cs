@@ -10,7 +10,7 @@ namespace LoggerService.Loggers
 
         private readonly IEventLogWrapper _eventLog;
 
-        private string _source = "OBS";
+        private string _source = "Example";
         private string _log = "Application";
 
         #endregion

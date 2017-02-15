@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Globalization;
 using Caliburn.Micro;
+using CaliburnExample.Contracts;
 using Common.Events;
 using Common.ServiceContracts;
 

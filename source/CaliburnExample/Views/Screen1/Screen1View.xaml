@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="CaliburnExample.Views.Screen1.Screen1View"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <StackPanel Background="Bisque">
+        <TextBlock>This is the page 1</TextBlock>
+        <Button x:Name="GoToHome" Height="50" Content="Back"/>
+    </StackPanel>
+</UserControl>
