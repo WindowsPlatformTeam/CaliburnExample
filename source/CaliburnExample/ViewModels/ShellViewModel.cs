@@ -17,15 +17,17 @@ namespace CaliburnExample.ViewModels
         private readonly IScreen1ViewModel _screen1ViewModel;
         private readonly IScreen2ViewModel _screen2ViewModel;
         private readonly IEventAggregator _eventAggregator;
+        private readonly IWindowManager _windowManager;
         private readonly ILogService _logService;
 
         public ShellViewModel(IMainPageViewModel mainPageViewModel, IScreen1ViewModel screen1ViewModel, IScreen2ViewModel screen2ViewModel,
-            IEventAggregator eventAggregator, ILogService logService)
+            IEventAggregator eventAggregator, IWindowManager windowManager, ILogService logService)
         {
             _mainPageViewModel = mainPageViewModel;
             _screen1ViewModel = screen1ViewModel;
             _screen2ViewModel = screen2ViewModel;
             _eventAggregator = eventAggregator;
+            _windowManager = windowManager;
             _logService = logService;
         }
 
@@ -45,7 +47,7 @@ namespace CaliburnExample.ViewModels
 
         public void Handle(NavigateToScreen2Event message)
         {
-            ActivateItem(_screen1ViewModel as Screen);
+            _windowManager.ShowWindow(_screen1ViewModel as Screen);
         }
 
         public void Handle(NavigateToScreen1Event message)

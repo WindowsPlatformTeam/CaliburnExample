@@ -13,7 +13,7 @@ namespace FooService
 
         public void DoSomething()
         {
-            _logService.Log("This service is something");    
+            _logService.Log("This service is doing something");    
         }
     }
 }

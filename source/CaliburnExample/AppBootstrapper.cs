@@ -10,6 +10,7 @@ using CaliburnExample.ViewModels.Screen2;
 using Common.Contracts;
 using Common.ServiceContracts;
 using Common.Wrappers;
+using FooService;
 using LoggerService;
 
 namespace CaliburnExample
@@ -39,6 +40,10 @@ namespace CaliburnExample
             // Services
             LogBootstrapper.RegisterTypes(builder);
             builder.RegisterType<LogService>().As<ILogService>().SingleInstance();
+            builder.RegisterType<FooService.FooService>().As<IFooService>().SingleInstance();
+
+
+            // Others
             builder.RegisterType<DateTimeWrapper>().As<IDateTimeWrapper>().SingleInstance();
 
             _container = builder.Build();
